@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/app.js" defer type="module"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Super Hero</title>
+</head>
+<body>
+     <header>
+        <nav class="menu-container">
+
+            <div class="menu_name">
+                <a href="/" onclick="route()">SuperHeros</a>
+            </div>
+
+            <div class = "menu_search">
+                <input type = "text" class = "search_input" placeholder="Search your superhero" name = "search">
+                <button type = "submit" class = "search_btn">
+                    <i class = "fas fa-search"></i>
+                </button>
+                <div class = "search-list" id = "search-list">
+                    <!-- <div class = "search-list-item">
+                        <img src = "./thumbnail-batman.jpg" alt = "">
+                        <p>Batman</p>
+                    </div>
+                    <div class = "search-list-item">
+                        <img src = "./thumbnail-batman.jpg" alt = "">
+                        <p>Batman</p>
+                    </div>
+                    <div class = "search-list-item">
+                        <img src = "./thumbnail-batman.jpg" alt = "">
+                        <p>Batman</p>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="menu_favorites">
+                <a href="/favorites" onclick="route()">FAVORITES</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main id="root">
+
+    </main>
+</body>
+</html>
