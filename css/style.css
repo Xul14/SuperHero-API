@@ -25,6 +25,7 @@ input {
 
 body {
     height: 100vh;
+    width: 100vw;
     display: grid;
     grid-template-rows: 100px 1fr;
     background-color: black;
@@ -33,17 +34,19 @@ body {
 
 .menu-container {
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px;
     /* gap: 24px; */
     /* text-transform: uppercase; */
-    box-shadow: 0px 0px 15px 0px purple;
+    /* box-shadow: 0px 0px 15px 0px purple; */
 }
 
-.menu_name {
+.menu_name a {
     font-size: 2rem;
+    color: #fff;
     /* color: rgba(128, 0, 128, 0.429); */
 }
 
@@ -56,7 +59,10 @@ body {
     position: relative;
 }
 
-.search_input {
+.search_input
+
+/* .form-control */
+    {
     min-width: 420px;
     color: #fff;
 }
@@ -81,6 +87,7 @@ body {
 
 .search-list::-webkit-scrollbar {
     width: 7px;
+    background-color: #000;
 }
 
 .search-list::-webkit-scrollbar-track {
@@ -90,7 +97,6 @@ body {
 
 .search-list::-webkit-scrollbar-thumb {
     background-color: purple;
-    border-radius: 5px;
 }
 
 .search-list-item {
@@ -115,30 +121,177 @@ body {
     cursor: pointer;
 }
 
-.menu_favorites {
-    color: whitesmoke;
+.menu_favorites a {
+    color: #fff;
     font-size: 1.5rem;
 }
 
-.menu_favorites:hover {
+.menu_favorites a:hover {
+    color: #5d0773;
     transition: 1s;
-    color: #731798;
 }
 
 #root {
     height: 100%;
-}
-
-.container {
     width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.card_container {
+    display: grid;
+    height: 600px;
+    width: 1000px;
+    grid-template-areas: "image container";
+    grid-template-columns: 400px 1fr;
+    background-color: #000;
+    box-shadow: 0px 0px 5px 0px #5d0773;
+    cursor: pointer;
+    transition: all .7s;
+}
+
+.card_container:hover{
+    box-shadow: 0px 0px 18px #5d0773;
+ }
+
+
+.card_image {
+    grid-area: image;
+    display: flex;
+    /* align-items: center; */
+    padding-top: 20px;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.card_image img {
+    height: 500px;
+    border-radius: 5px;
+}
+
+.card_infos {
+    grid-area: container;
     height: 100%;
-    color: white;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "name" "pages" "conteudo";
+    grid-template-rows: 60px 80px 1fr;
+    /* background-color: plum; */
 }
 
-.container-amarelo {
-    background-color: yellow;
+.name_superhero {
+    grid-area: name;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+
+    /* background-color: palevioletred; */
 }
 
-/* .container-home {
-    background-color: black;
+.pages {
+    grid-area: pages;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: purple; */
+}
+
+.pages_infos {
+    /* border-bottom: 4px solid transparent;
+    transition: border-color .5s; */
+    -webkit-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.pages_infos :hover{
+    border-bottom: 4px solid #5d0773;
+    opacity: 0.9;
+}
+
+.pages_info{
+    color: #fff;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.content_pages {
+    grid-area: conteudo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: peru; */
+}
+
+
+.container-connections{
+    background-color: lightblue;
+}
+
+.container-appearence{
+    background-color: lightcoral;
+}
+
+.container-biography{
+    background-color: lightpink;
+}
+.container-powerstats{
+    background-color: lightskyblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //TESTE CARDS
+#root {
+    height: 100%;
+    padding: 50px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(200px,1fr));
 } */
+.card {
+    width: 200px;
+    height: 300px;
+    display: grid;
+    place-items: center;
+    background-color: #000;
+    box-shadow: 0px 0px 5px 0px #505050;
+    cursor: pointer;
+    transition: all .7s;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 18px #5d0773;
+}
+
+.card__text {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card__image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: beige;
+    background-size: cover;
+}

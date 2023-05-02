@@ -1,42 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./js/app.js" defer type="module"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>Super Hero</title>
 </head>
+
 <body>
-     <header>
+    <header>
         <nav class="menu-container">
 
             <div class="menu_name">
-                <a href="/" onclick="route()">SuperHeros</a>
+                <a href="/">SuperHeros</a>
             </div>
 
-            <div class = "menu_search">
-                <input type = "text" class = "search_input" placeholder="Search your superhero" name = "search">
-                <button type = "submit" class = "search_btn">
-                    <i class = "fas fa-search"></i>
+            <form class="menu_search">
+                <input type="search" class="search_input" placeholder="Search your superhero" name="search">
+                <button type="submit" class="search_btn">
+                    <i class="fas fa-search"></i>
                 </button>
-                <div class = "search-list" id = "search-list">
+                <div class="search-list" id="search-list">
                     <!-- <div class = "search-list-item">
-                        <img src = "./thumbnail-batman.jpg" alt = "">
-                        <p>Batman</p>
-                    </div>
-                    <div class = "search-list-item">
-                        <img src = "./thumbnail-batman.jpg" alt = "">
-                        <p>Batman</p>
-                    </div>
-                    <div class = "search-list-item">
                         <img src = "./thumbnail-batman.jpg" alt = "">
                         <p>Batman</p>
                     </div> -->
                 </div>
-            </div>
+            </form>
 
             <div class="menu_favorites">
                 <a href="/favorites" onclick="route()">FAVORITES</a>
@@ -47,6 +43,35 @@
 
     <main id="root">
 
+        <div class="card_container">
+
+            <div class="card_image">
+                <img src="./thumbnail-batman.jpg" alt="">
+            </div>
+
+            <div class="card_infos">
+                <h1 class="name_superhero">BATMAN</h1>
+
+                <div class="pages">
+
+                    <button type="button" class="pages_infos" data-id="1">
+                        <a href="/powerstats" onclick="route()" class="pages_info">POWERSTATS</a>
+                    </button>
+                    <button type="button" class="pages_infos" data-id="1">
+                        <a href="/biography" onclick="route()" class="pages_info">BIOGRAPHY</a>
+                    </button>
+                    <button type="button" class="pages_infos" data-id="1">
+                        <a href="/appearance" onclick="route()" class="pages_info">APPEARANCE</a>
+                    </button>
+                    <button type="button" class="pages_infos" data-id="1">
+                        <a href="/connections" onclick="route()" class="pages_info">CONNECTIONS</a>
+                    </button>
+                </div>
+                <div class="content_pages" id="content_pages">aaaaaaaaaaaa</div>
+            </div>
+        </div>
+
     </main>
 </body>
+
 </html>
