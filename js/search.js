@@ -1,13 +1,13 @@
-
 'use strict'
 
 import { getCharacterSearchName } from "../js/api.js";
+import { getCharacterById } from "../js/api.js";
 
 const searchForm = document.querySelector('.menu_search')
 let searchList = document.getElementById('search-list')
 let searchCharacter
 
-const getInputValue = async (event) => {
+const getInputValue = async(event) => {
     event.preventDefault()
     let searchText = await searchForm.search.value
 
@@ -16,7 +16,7 @@ const getInputValue = async (event) => {
 
 searchForm.addEventListener('submit', getInputValue)
 
-const fetchAllSuperHero = async (searchText) => {
+const fetchAllSuperHero = async(searchText) => {
     searchCharacter = await getCharacterSearchName(searchText)
 
     if (searchCharacter.response === 'success') {
