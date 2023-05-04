@@ -148,6 +148,7 @@ body {
     background-color: #000;
     box-shadow: 0px 0px 5px 0px #5d0773;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
     transition: all .7s;
 }
 
@@ -186,8 +187,7 @@ body {
     align-items: center;
     justify-content: center;
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-
-    /* background-color: palevioletred; */
+    letter-spacing: 1px;
 }
 
 .pages {
@@ -195,7 +195,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* background-color: purple; */
 }
 
 .pages_infos {
@@ -216,6 +215,7 @@ body {
     color: #fff;
     font-size: 1.1rem;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .content_pages {
@@ -223,24 +223,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: peru; */
 }
 
-
-.container-connections{
-    background-color: lightblue;
-}
-
-.container-appearence{
-    background-color: lightcoral;
-}
-
-.container-biography{
-    background-color: lightpink;
-}
-.container-powerstats{
-    background-color: lightskyblue;
-}
 
 
 

@@ -1,0 +1,42 @@
+.container-powerstats {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    justify-content: left;
+}
+
+.stat-names {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding-left: 20px;
+    color: #7e7e7e;
+    font-weight: 600;
+}
+
+.stat-names span {
+    display: block;
+    padding: 20px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.stat-bars {
+    width: 80%;
+}
+
+.bar-container {
+    background-color: rgba(0, 0, 0, 0);
+    width: 80%;
+    padding: 10px;
+}
+
+.bar {
+    background-color: #5d0773;
+    border-radius: 10px;
+    padding: 10px;
+    transition-duration: 600ms;
+}

@@ -1,0 +1,33 @@
+.container-appearence{
+    height: 100%;
+    width: 100%;
+}
+
+.container-itens-appearance{
+    display: flex;
+    margin: 2rem ;
+    padding: 0px 20px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    justify-content: space-between;
+
+}
+
+.item-appearance{
+    font-weight: 600;
+    margin-right: 1rem;
+
+}
+
+.appearance-desc{
+    display: flex;
+    height: 30px;
+    min-width: 80px;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: purple;
+    justify-content: center;
+    align-items: center;
+}
+
+

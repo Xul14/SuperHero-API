@@ -1,0 +1,29 @@
+.container-connections {
+    height: 100%;
+    width: 100%;
+}
+
+.connections-li {
+    display: grid;
+    gap: 10px;
+    margin: 2rem;
+    grid-template-areas: "title" "conteiner";
+    grid-template-rows: 1rem 1rem;
+}
+
+.connections-title {
+    grid-area: title;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #505050;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+}
+
+.connections {
+    grid-area: container;
+    display: flex;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    padding-left: -110px;
+}
