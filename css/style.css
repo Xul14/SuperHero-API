@@ -57,6 +57,7 @@ body {
 }
 
 .search_input {
+    display: flex;
     min-width: 420px;
     color: #fff;
 }

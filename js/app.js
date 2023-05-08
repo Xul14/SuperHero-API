@@ -3,7 +3,7 @@
 import './routes.js'
 import { getCharacterById } from '../js/api.js'
 
-const getCharacter = await getCharacterById(99)
+const getCharacter = await getCharacterById(18)
 
 const criarCard = (character) => {
 
@@ -35,29 +35,38 @@ const criarCard = (character) => {
     const pagePowerstats = document.createElement('a')
     pagePowerstats.classList.add('pages_infos_powerstats')
     pagePowerstats.innerHTML = 'powerstats'
+    // pagePowerstats.href = "../pages/powerstats.html"
 
-    const containerPowerstats = document.createElement('div')
-    containerPowerstats.classList.add('container-powerstats')
+    // const containerPowerstats = document.createElement('div')
+    // containerPowerstats.classList.add('container-powerstats')
+   
 
-    const powerstatsNames = document.createElement('div')
-    powerstatsNames.classList.add('stat-names')
+    // const powerstatsNames = document.createElement('div')
+    // powerstatsNames.classList.add('stat-names')
 
-    //PAGE BIOGRAPHY
-    const pageBio = document.createElement('a')
-    pageBio.classList.add('pages_infos_biography')
-    pageBio.innerHTML = 'biography'
+    // const combat = document.createElement('span')
+    // combat.classList.add('combat')
+    // combat.innerHTML = 'combat'
 
+    // const durability = document.createElement('span')
+    // durability.classList.add('durability')
+    // durability.innerHTML = 'durability'
 
-    //PAGE APPEARANCE
-    const pageAppearance = document.createElement('a')
-    pageAppearance.classList.add('pages_infos_appearance')
-    pageAppearance.innerHTML = 'appearance'
+    // const intelligence = document.createElement('span')
+    // intelligence.classList.add('intelligence')
+    // intelligence.innerHTML = 'intelligence'
 
-    //PAGE CONNECTIONS
-    const pageConnections = document.createElement('a')
-    pageConnections.classList.add('pages_infos_connections')
-    pageConnections.innerHTML = 'connections'
+    // const power = document.createElement('span')
+    // power.classList.add('power')
+    // power.innerHTML = 'power'
 
+    // const speed = document.createElement('span')
+    // speed.classList.add('speed')
+    // speed.innerHTML = 'speed'
+
+    // const strength = document.createElement('span')
+    // strength.classList.add('strength')
+    // strength.innerHTML = 'strength'
 
     console.log(character);
 
@@ -66,6 +75,12 @@ const criarCard = (character) => {
     cardInfos.append(nameCharacter, pagesWebComponents)
     pagesWebComponents.appendChild(btnPages)
     btnPages.append(pagePowerstats, pageBio, pageAppearance, pageConnections)
+    // pagePowerstats.appendChild(containerPowerstats)
+    // pageBio.appendChild(containerBio)
+    // pageAppearance.appendChild(containerAppearance)
+    // pageConnections.appendChild(containerConnections)
+    // // containerPowerstats.appendChild(powerstatsNames)
+    // powerstatsNames.append(combat, durability, intelligence, power, speed, strength)
 
     return containerCard
 
@@ -80,3 +95,4 @@ const loadCardCharacters = () => {
 }
 
 loadCardCharacters()
+

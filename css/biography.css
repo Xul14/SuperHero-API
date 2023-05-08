@@ -3,7 +3,7 @@
     width: 100%;
 }
 
-.container-itens {
+/* .container-itens {
     margin: 2rem;
     font-size: 1.2rem;
     text-transform: capitalize;
@@ -17,5 +17,24 @@
 }
 
 .item-desc {
+    font-weight: 300;
+} */
+
+.container-biography li {
+    margin: 2rem ;
+}
+.container-biography li span {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.container-biography li span:first-child {
+    font-weight: 600;
+    color: #7e7e7e;
+    margin-right: 1rem;
+}
+
+.container-biography li span:last-child {
     font-weight: 300;
 }

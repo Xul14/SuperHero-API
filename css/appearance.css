@@ -19,7 +19,34 @@
 
 }
 
-.appearance-desc{
+/* .appearance-desc{
+    display: flex;
+    height: 30px;
+    min-width: 80px;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: purple;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .container-appearence li{
+    display: flex;
+    margin: 2rem ;
+    padding: 0px 20px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    justify-content: space-between;
+
+}
+
+.container-appearence li span:first-child{
+    font-weight: 600;
+    margin-right: 1rem;
+
+} */
+
+.container-appearence li span :last-child{
     display: flex;
     height: 30px;
     min-width: 80px;
@@ -29,5 +56,4 @@
     justify-content: center;
     align-items: center;
 }
-
 
